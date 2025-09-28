@@ -130,35 +130,35 @@
 							<div class="collapse navbar-collapse" id="mobail-header-collapse">
 								<ul class="navbar-nav align-items-start align-items-lg-center ms-auto mb-2 mb-lg-0">
 									<li class="nav-item">
-										<a class="nav-link active" href="index.html">Главная</a>
+										<a class="nav-link active" href="#">Главная</a>
 									</li>
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="archive-apartments.html">О нас</a>
+										<a class="nav-link" href="#sp-about">О нас</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="about.html">Подарки</a>
+										<a class="nav-link" href="#sp-gifts">Подарки</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="about.html">Партнеры</a>
+										<a class="nav-link" href="#sp-clients">Партнеры</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="contacts.html">Контакты</a>
+										<a class="nav-link" href="#sp-contacts">Контакты</a>
 									</li>
 								</ul>
 							</div>
@@ -204,14 +204,14 @@
 							<div class="collapse navbar-collapse" id="sliding-header-collapse">
 								<ul class="navbar-nav align-items-start align-items-lg-center ms-auto mb-2 mb-lg-0">
 									<li class="nav-item">
-										<a class="nav-link active" href="index.html">Главная</a>
+										<a class="nav-link active" href="#">Главная</a>
 									</li>
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="archive-apartments.html">О нас</a>
+										<a class="nav-link" href="#sp-about">О нас</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -219,21 +219,21 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="about.html">Подарки</a>
+										<a class="nav-link" href="#sp-gifts">Подарки</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="about.html">Партнеры</a>
+										<a class="nav-link" href="#sp-clients">Партнеры</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
 										<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="contacts.html">Контакты</a>
+										<a class="nav-link" href="#sp-contacts">Контакты</a>
 									</li>
 								</ul>
 							</div>
@@ -274,23 +274,23 @@
 						<div class="navbar-collapse collapse" id="sliding-header-collapse" style="">
 							<ul id="menu-main-menu" class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a href="index.html" class="nav-link active">Главная</a>
+									<a href="#" class="nav-link active">Главная</a>
 								</li>
 
 								<li class="nav-item">
-									<a href="archive-apartments.html" class="nav-link">О нас</a>
+									<a href="#sp-about" class="nav-link">О нас</a>
 								</li>
 
 								<li class="nav-item">
-									<a href="about.html" class="nav-link">Подарки</a>
+									<a href="#sp-gifts" class="nav-link">Подарки</a>
 								</li>
 
 								<li class="nav-item">
-									<a href="contacts.html" class="nav-link">Партнеры</a>
+									<a href="#sp-clients" class="nav-link">Партнеры</a>
 								</li>
 
 								<li class="nav-item">
-									<a href="contacts.html" class="nav-link">Контакты</a>
+									<a href="#sp-contacts" class="nav-link">Контакты</a>
 								</li>
 
 								<li class="nav-item d-lg-none">
@@ -380,6 +380,7 @@
 		<!-- /Home section -->
 
 		<!-- ABOUT SECTION -->
+		<div id="sp-about" class="scroll-points"></div>
 		<section class="about-section section">
 			<div class="container">
 				<div class="row">
@@ -664,6 +665,7 @@
 		</script>
 
 		<!-- Наши душевные подарки -->
+		<div id="sp-gifts" class="scroll-points"></div>
 		<section class="section bg-light section-gifts">
 			<div class="container">
 				<!-- Заголовок -->
@@ -720,13 +722,14 @@
 						<img src="img/ico/section-title-dec.svg" alt="Пчелки между секциями" class="img-fluid section-decor" />
 					</div>
 				</div>
-				<div class="row justify-content-center" style="max-height: 480px">
+				<div class="row justify-content-center">
 					<div class="col-md-8">
-						<div style="position: relative">
+						<!-- Контейнер с фиксированной высотой -->
+						<div class="video-wrapper" style="position: relative; height: 480px; overflow: hidden; border-radius: 8px">
 							<video
 								id="video-player"
 								class="rounded"
-								style="width: 100%; height: 100%; object-fit: cover; max-height: 480px"
+								style="width: 100%; height: 100%; object-fit: cover"
 								playsinline="playsinline"
 								loop="loop"
 								poster="img/video-poster.jpg"
@@ -742,128 +745,24 @@
 								</div>
 							</div>
 						</div>
-
-						<script>
-							function play() {
-								document.getElementById('video-player').play();
-								document.getElementById('play-circle').style.display = 'none';
-								document.getElementById('stop-circle').style.display = 'block';
-							}
-
-							function pause() {
-								document.getElementById('video-player').pause();
-								document.getElementById('stop-circle').style.display = 'none';
-								document.getElementById('play-circle').style.display = 'block';
-							}
-						</script>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- /ABOUT SECTION GALLERY -->
-		<!-- <div id="aboutSectionGalleryWrapper">
-			<div
-				id="aboutSectionGallery"
-				class="carousel slide"
-				data-bs-ride="false"
-				data-bs-interval="false"
-				style="display: none; position: fixed; top: 0; height: 100%; width: 100%"
-			>
-				<div class="carousel-indicators">
-					<button
-						id="indAboutSectionGallery-1"
-						type="button"
-						data-bs-target="#aboutSectionGallery"
-						data-bs-slide-to="0"
-						aria-label="Slide 1"
-					></button>
-					<button
-						id="indAboutSectionGallery-2"
-						type="button"
-						data-bs-target="#aboutSectionGallery"
-						data-bs-slide-to="1"
-						aria-label="Slide 2"
-					></button>
-				</div>
-				<div class="carousel-inner h-100">
-					<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img src="img/card-image-1.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh" alt="..." />
-							</div>
-						</div>
-					</div>
-					<div id="imgAboutSectionGallery-2" class="carousel-item h-100">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img src="img/card-image-2.jpg" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh" alt="..." />
-							</div>
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-
-			<button
-				type="button"
-				onclick="aboutSectionGalleryClose();"
-				class="btn-close btn-close-white"
-				style="position: fixed; top: 25px; right: 25px; z-index: 99999"
-				aria-label="Close"
-			></button>
-		</div> -->
-		<!-- /ABOUT SECTION GALLERY -->
-
-		<!-- /ABOUT SECTION GALLERY SCRIPT -->
 		<script>
-			/* Gallery opening function */
-			function aboutSectionGalleryOn(gal, img) {
-				var gallery = gal; // Получаем ID галереи
-				var image = img; // Получаем ID картинки
+			function play() {
+				document.getElementById('video-player').play();
+				document.getElementById('play-circle').style.display = 'none';
+				document.getElementById('stop-circle').style.display = 'block';
+			}
 
-				// Открываем обертку галереи
-				document.getElementById('aboutSectionGalleryWrapper').style.display = 'block';
-
-				// Открываем галерею
-				if (gallery == 'aboutSectionGallery') {
-					document.getElementById('aboutSectionGallery').style.display = 'block';
-				}
-
-				/* Открываем изображения и индикаторы галереи */
-				if (image == 'imgAboutSectionGallery-1') {
-					document.getElementById('imgAboutSectionGallery-1').classList.add('active');
-					document.getElementById('indAboutSectionGallery-1').classList.add('active');
-				}
-				if (image == 'imgAboutSectionGallery-2') {
-					document.getElementById('imgAboutSectionGallery-2').classList.add('active');
-					document.getElementById('indAboutSectionGallery-2').classList.add('active');
-				}
-			} /* Ending gallery opening function */
-
-			// Кнопка закрытия галереи
-			function aboutSectionGalleryClose() {
-				// Закрываем обертку галереи
-				document.getElementById('aboutSectionGalleryWrapper').style.display = 'none';
-
-				// Закрываем галерею
-				document.getElementById('aboutSectionGallery').style.display = 'none';
-
-				/* Закрываем тзображения и индикаторы галереи */
-				document.getElementById('imgAboutSectionGallery-1').classList.remove('active');
-				document.getElementById('indAboutSectionGallery-1').classList.remove('active');
-				document.getElementById('imgAboutSectionGallery-2').classList.remove('active');
-				document.getElementById('indAboutSectionGallery-2').classList.remove('active');
+			function pause() {
+				document.getElementById('video-player').pause();
+				document.getElementById('stop-circle').style.display = 'none';
+				document.getElementById('play-circle').style.display = 'block';
 			}
 		</script>
-		<!-- /ABOUT SECTION GALLERY SCRIPT -->
 
 		<!-- По семейному: честно и душевно -->
 		<section class="hexagon-section section bg-light">
@@ -1159,6 +1058,7 @@
 		</script>
 
 		<!-- Благодарности наших клиентов -->
+		<div id="sp-clients" class="scroll-points"></div>
 		<section class="section bg-image bg-light section-certificates">
 			<div class="container">
 				<!-- Заголовок -->
@@ -1295,6 +1195,7 @@
 		</section>
 
 		<!--  Contacts -->
+		<div id="sp-contacts" class="scroll-points"></div>
 		<section class="section text-dark bg-light section-about section-grid">
 			<div class="container">
 				<div class="section-title text-center">
@@ -1383,7 +1284,7 @@
 					<div class="col-xl-10">
 						<ul class="nav justify-content-end">
 							<li class="nav-item">
-								<a class="nav-link active" href="index.html">Главная</a>
+								<a class="nav-link active" href="#">Главная</a>
 							</li>
 							<li class="nav-item d-none d-xl-inline">
 								<span class="nav-link">
@@ -1392,7 +1293,7 @@
 							</li>
 
 							<li class="dropdown nav-item">
-								<a class="nav-link" href="archive-apartments.html">О нас</a>
+								<a class="nav-link" href="#sp-about">О нас</a>
 							</li>
 							<li class="nav-item d-none d-xl-inline">
 								<span class="nav-link">
@@ -1401,7 +1302,7 @@
 							</li>
 
 							<li class="dropdown nav-item">
-								<a class="nav-link" href="about.html">Подарки</a>
+								<a class="nav-link" href="#sp-gifts">Подарки</a>
 							</li>
 							<li class="nav-item d-none d-xl-inline">
 								<span class="nav-link">
@@ -1410,7 +1311,7 @@
 							</li>
 
 							<li class="dropdown nav-item">
-								<a class="nav-link" href="about.html">Партнеры</a>
+								<a class="nav-link" href="#sp-clients">Партнеры</a>
 							</li>
 							<li class="nav-item d-none d-xl-inline">
 								<span class="nav-link">
@@ -1419,7 +1320,7 @@
 							</li>
 
 							<li class="nav-item">
-								<a href="contacts.html" class="nav-link header-link">Контакты</a>
+								<a href="#sp-contacts" class="nav-link header-link">Контакты</a>
 							</li>
 						</ul>
 					</div>

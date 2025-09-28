@@ -323,7 +323,7 @@ a:hover {
 
 @media (max-width: 768px) {
 	.btn-corporate-color-1 {
-        padding: 13px 35px;
+		padding: 13px 35px;
 		font-weight: 700;
 		font-size: 16px;
 	}
@@ -2421,6 +2421,7 @@ footer {
 	padding: 0;
 }
 
+.gifts-description,
 .order-description {
 	margin-bottom: var(--section-padding);
 }
@@ -2887,6 +2888,13 @@ footer {
 	transition: 0.25s;
 }
 
+@media (max-width: 768px) {
+	#play {
+		top: 35%;
+		left: 40%;
+	}
+}
+
 #play:hover {
 	background: url(../img/ico/play.svg) no-repeat;
 	background-size: contain;
@@ -3196,7 +3204,7 @@ footer {
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
 	#navbar-brand-img {
 		display: flex;
 		justify-self: center;
@@ -3209,4 +3217,28 @@ h3.blockquote {
 	font-weight: 500;
 	font-size: 20px;
 	color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+	.video-wrapper {
+		height: 280px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.video-wrapper {
+		height: 200px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.video-wrapper {
+		height: 50vh !important; /* 50% высоты экрана */
+	}
+}
+
+@media (max-width: 480px) {
+	.video-wrapper {
+		height: 60vh !important; /* 60% высоты экрана */
+	}
 }
