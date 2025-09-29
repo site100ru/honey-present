@@ -1359,9 +1359,10 @@ h6,
 }
 
 .nav-mobile .nav-item .nav-link {
-	justify-self: center;
-	line-height: 1;
-	font-size: 32px;
+	width: 100%;
+    line-height: 1;
+    font-size: 32px;
+    text-align: center;
 }
 
 .archive-portfolio-section-2 .nav-item a,
