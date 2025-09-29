@@ -235,6 +235,10 @@ a:hover {
 	color: #c8c8c8;
 }
 
+.header-nav-bottom a.nav-link {
+    text-wrap: nowrap;
+}
+
 .header-nav-bottom a.nav-link:hover,
 .header-nav-bottom a.nav-link:focus {
 	color: var(--corporate-color-1) !important;
