@@ -74,7 +74,7 @@ p strong {
 }
 
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 body.modal-open {
@@ -409,6 +409,7 @@ a:hover {
 .header-nav-top button.top-menu-tel.nav-link,
 .header-nav-top a.top-menu-tel.nav-link {
 	transition: all 0.3s;
+	text-align: start;
 }
 
 .navbar-light .navbar-nav button.nav-link:hover,
@@ -1323,8 +1324,8 @@ h6,
 
 .nav-mobile .nav-item .nav-link {
 	justify-self: center;
-    line-height: 1;
-    font-size: 32px;
+	line-height: 1;
+	font-size: 32px;
 }
 
 .archive-portfolio-section-2 .nav-item a,
@@ -1493,6 +1494,14 @@ h6,
 	color: #c8c8c8;
 	text-transform: uppercase;
 	transition: 0.25s;
+}
+
+@media (max-width: 1400px) {
+	.contacts-section-4 .nav-link,
+	.contacts-section-4 .left-col-footer-menu .nav-link,
+	.contacts-section-4 .right-col-footer-menu .nav-link {
+		font-size: 30px;
+	}
 }
 
 .contacts-section-4 .d-xl-inline .nav-link {
@@ -2259,14 +2268,23 @@ footer {
 }
 
 #play-circle {
-	width: 35%;
-	height: 35%;
-	background: url(../img/ico/play-circle.png) no-repeat;
+	width: 160px;
+	height: 160px;
+	background: url(../img/ico/play-border.svg) no-repeat;
 	background-size: contain;
 	position: absolute;
-	top: 33%;
-	left: 40%;
-	z-index: 100;
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+}
+
+#play-circle:hover {
+	background: url(../img/ico/play.svg) no-repeat;
+	background-size: contain;
+	position: absolute;
+	cursor: pointer;
+	transition: 0.25s;
 }
 
 #stop-circle {
@@ -2291,33 +2309,6 @@ footer {
 	position: absolute;
 	right: 5%;
 	bottom: 5%;
-}
-
-#play {
-	width: 19%;
-	aspect-ratio: 1;
-	background: url(../img/ico/play-border.svg) no-repeat;
-	background-size: contain;
-	position: absolute;
-	top: 34%;
-	left: 22%;
-	cursor: pointer;
-	transition: 0.25s;
-}
-
-@media (max-width: 768px) {
-	#play {
-		top: 35%;
-		left: 40%;
-	}
-}
-
-#play:hover {
-	background: url(../img/ico/play.svg) no-repeat;
-	background-size: contain;
-	position: absolute;
-	cursor: pointer;
-	transition: 0.25s;
 }
 
 .section-glide {
@@ -2519,10 +2510,13 @@ footer {
 
 @media (max-width: 1399px) {
 	.honeycomb-container {
-		max-width: 850px;
 		margin: 0 auto;
-		padding-left: 65px;
 		justify-content: center;
+	}
+
+	.honeycomb-container.honeycomb-container-alt .hexagon-wrapper,
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		width: 200px;
 	}
 
 	.honeycomb-container.honeycomb-container-alt {
@@ -2537,6 +2531,18 @@ footer {
 }
 
 @media (max-width: 1199px) {
+	.honeycomb-container.honeycomb-container-alt .hexagon-wrapper,
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		width: 140px;
+	}
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		height: 140px;
+	}
+
+	.honeycomb-container.honeycomb-container-alt .hexagon img {
+		height: 50%;
+	}
+
 	.hexagon-wrapper:nth-child(even) {
 		margin-top: 0;
 	}
@@ -2553,7 +2559,40 @@ footer {
 	}
 }
 
+@media (max-width: 992px) {
+	.honeycomb-container.honeycomb-container-alt .hexagon-wrapper,
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		width: 120px;
+	}
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		height: 120px;
+	}
+
+	.honeycomb-container.honeycomb-container-alt .hexagon img {
+		height: 50%;
+	}
+}
+
 @media (max-width: 768px) {
+	.honeycomb-container.honeycomb-container-alt .hexagon-wrapper,
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		width: 60%;
+	}
+	.honeycomb-container.honeycomb-container-alt .hexagon {
+		height: 100%;
+		aspect-ratio: 1;
+		place-self: center;
+	}
+
+	.honeycomb-container.honeycomb-container-alt .hexagon img {
+		height: 50%;
+	}
+
+	.honeycomb-container.honeycomb-container-alt {
+		flex-direction: column;
+		align-content: center;
+	}
+
 	.hexagon-wrapper:nth-child(3),
 	.hexagon-wrapper:nth-child(5) {
 		margin-top: -112px;
@@ -2639,5 +2678,31 @@ h3.blockquote {
 @media (max-width: 480px) {
 	.video-wrapper {
 		height: 60vh !important;
+	}
+}
+
+.menu-item-2 {
+	margin-right: 100px;
+}
+
+.menu-item-3 {
+	margin-right: 40px;
+}
+
+.menu-item-4 {
+	margin-right: 40px;
+}
+
+@media (max-width: 1200px) {
+	.menu-item-2 {
+		margin-right: 40px;
+	}
+
+	.menu-item-3 {
+		margin-right: 10px;
+	}
+
+	.menu-item-4 {
+		margin-right: 10px;
 	}
 }
