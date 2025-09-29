@@ -967,6 +967,30 @@ p.advantages {
 	background-size: cover;
 }
 
+@media (max-width: 1440px) and (min-width: 992px) {
+	.order-left-gradient-section {
+		padding: 30px;
+	}
+
+	.order-left-gradient-section .section-decor {
+		padding-block: 20px;
+		max-height: 100px;
+	}
+
+	.order-left-gradient-section .order-description {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.order-left-gradient-section h2 {
+		font-size: 32px;
+	}
+
+	.order-left-gradient-section .btn-corporate-color-1 {
+		padding: 24px;
+	}
+}
+
 @media (max-width: 991.98px) {
 	.order-left-gradient-section {
 		background-image: none;
@@ -2539,8 +2563,8 @@ h3.blockquote {
 	}
 }
 
-/* Уменьшение размера на экранах до 1200px */
-@media (max-width: 1200px) and (min-width: 1024px) {
+/* Уменьшение размера на экранах до 1260px */
+@media (max-width: 1260px) and (min-width: 1024px) {
 	.hexagon {
 		width: 200px;
 		height: 200px;
@@ -2606,6 +2630,10 @@ h3.blockquote {
 	justify-content: center;
 	gap: 24px;
 	flex-wrap: nowrap;
+}
+
+.hexagon-section {
+	overflow: hidden;
 }
 
 .honeycomb-text-section .hexagon-item {
