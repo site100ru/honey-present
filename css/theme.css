@@ -162,8 +162,9 @@ a:hover {
 
 	.home-download {
 		display: flex;
-		justify-self: center;
+		width: max-content;
 		padding: 13px 35px;
+		margin: 0 auto;
 	}
 
 	.description_about {
