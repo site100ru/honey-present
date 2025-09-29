@@ -2275,7 +2275,7 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	z-index: 1000;
+	z-index: 100;
 	transform: translate(-50%, -50%);
 }
 
@@ -2508,6 +2508,11 @@ footer {
 	clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
 }
 
+.honeycomb-container.honeycomb-container-alt .hexagon img {
+	height: 60%;
+	width: 60%;
+}
+
 @media (max-width: 1399px) {
 	.honeycomb-container {
 		margin: 0 auto;
@@ -2569,7 +2574,7 @@ footer {
 	.honeycomb-container.honeycomb-container-alt .hexagon img {
 		height: 50%;
 	}
-    .hexagon-wrapper:nth-child(4) {
+	.hexagon-wrapper:nth-child(4) {
 		margin-top: -112px;
 	}
 }
