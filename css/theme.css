@@ -180,19 +180,6 @@ a:hover {
 	margin-bottom: var(--section-margin-bottom);
 }
 
-.section-title h1,
-.section-title h2,
-.section-title h3,
-.section-title h4,
-.section-title h5,
-.section-title h6 {
-	font-family: HelveticaNeue;
-	font-weight: 700;
-	font-size: var(--section-font-size);
-	color: #4b4b4b !important;
-	margin-bottom: 16px;
-}
-
 .section-description {
 	font-family: HelveticaNeueCyr;
 	font-weight: 300;
