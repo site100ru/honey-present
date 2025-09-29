@@ -1907,7 +1907,7 @@ footer {
 	margin-bottom: var(--section-padding);
 }
 
-.gifts-description .single-product-img {
+#section-gifts .single-product-img {
 	height: auto;
 }
 
