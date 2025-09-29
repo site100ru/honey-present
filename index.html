@@ -415,24 +415,6 @@
 					</div>
 				</div>
 
-				<!-- Кнопка по центру -->
-				<div class="row my-4">
-					<div class="col text-center">
-						<button
-							class="btn btn-corporate-color-1 btn-arrow"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#aboutCollapse"
-							aria-expanded="false"
-							aria-controls="aboutCollapse"
-							id="aboutToggleBtn"
-						>
-							Читать дальше
-							<img src="img/arrow-bottom.svg" alt="" id="arrowIcon" />
-						</button>
-					</div>
-				</div>
-
 				<!-- Скрытый блок (коллапс) -->
 				<div class="collapse" id="aboutCollapse">
 					<div class="row justify-content-between about_box">
@@ -498,6 +480,24 @@
 								</div>
 							</a>
 						</div>
+					</div>
+				</div>
+
+				<!-- Кнопка по центру -->
+				<div class="row my-4">
+					<div class="col text-center">
+						<button
+							class="btn btn-corporate-color-1 btn-arrow"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#aboutCollapse"
+							aria-expanded="false"
+							aria-controls="aboutCollapse"
+							id="aboutToggleBtn"
+						>
+							Читать дальше
+							<img src="img/arrow-bottom.svg" alt="" id="arrowIcon" />
+						</button>
 					</div>
 				</div>
 			</div>
@@ -684,6 +684,27 @@
 				document.getElementById('aboutSectionGallery_4').style.display = 'none';
 				document.getElementById('imgAboutSectionGallery_4-1').classList.remove('active');
 			}
+			// Обработка кнопки "Читать дальше"
+			document.addEventListener('DOMContentLoaded', function () {
+				const collapseElement = document.getElementById('aboutCollapse');
+				const toggleBtn = document.getElementById('aboutToggleBtn');
+				const arrowIcon = document.getElementById('arrowIcon');
+				const aboutSection = document.getElementById('sp-about');
+
+				collapseElement.addEventListener('show.bs.collapse', function () {
+					toggleBtn.innerHTML = 'Скрыть <img src="img/arrow-top.svg" alt="" id="arrowIcon" />';
+				});
+
+				collapseElement.addEventListener('hide.bs.collapse', function () {
+					// Сначала прокрутка вверх
+					aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+					// Потом сворачивание (с небольшой задержкой для завершения прокрутки)
+					setTimeout(function () {
+						toggleBtn.innerHTML = 'Читать дальше <img src="img/arrow-bottom.svg" alt="" id="arrowIcon" />';
+					}, 500);
+				});
+			});
 		</script>
 
 		<!-- Наши душевные подарки -->
@@ -1710,7 +1731,7 @@
 						<a href="#" class="mx-auto">
 							<img id="navbar-brand-img" src="img/ico/logo-light.svg" class="img-fluid" />
 						</a>
-                        <ul class="nav nav-mobile justify-content-end flex-column align-content-center  pt-5">
+						<ul class="nav nav-mobile justify-content-end flex-column align-content-center pt-5">
 							<li class="nav-item">
 								<a class="nav-link active" href="#">Главная</a>
 							</li>
@@ -1723,7 +1744,7 @@
 							<li class="dropdown nav-item">
 								<a class="nav-link" href="#sp-about">О нас</a>
 							</li>
-							<li class="nav-item ">
+							<li class="nav-item">
 								<span class="nav-link">
 									<img src="img/ico/menu-decoration-point.svg" alt="" />
 								</span>
@@ -1732,7 +1753,7 @@
 							<li class="dropdown nav-item">
 								<a class="nav-link" href="#sp-gifts">Подарки</a>
 							</li>
-							<li class="nav-item ">
+							<li class="nav-item">
 								<span class="nav-link">
 									<img src="img/ico/menu-decoration-point.svg" alt="" />
 								</span>
@@ -1741,7 +1762,7 @@
 							<li class="dropdown nav-item">
 								<a class="nav-link" href="#sp-clients">Партнеры</a>
 							</li>
-							<li class="nav-item ">
+							<li class="nav-item">
 								<span class="nav-link">
 									<img src="img/ico/menu-decoration-point.svg" alt="" />
 								</span>
@@ -1751,7 +1772,6 @@
 								<a href="#sp-contacts" class="nav-link header-link">Контакты</a>
 							</li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
