@@ -2524,7 +2524,6 @@ footer {
 		padding-left: 0;
 	}
 
-	.hexagon-wrapper:nth-child(4),
 	.hexagon-wrapper:nth-child(6) {
 		margin-top: -112px;
 	}
@@ -2553,7 +2552,6 @@ footer {
 		margin-top: 112px;
 	}
 
-	.hexagon-wrapper:nth-child(4),
 	.hexagon-wrapper:nth-child(6) {
 		margin-top: -112px;
 	}
@@ -2570,6 +2568,9 @@ footer {
 
 	.honeycomb-container.honeycomb-container-alt .hexagon img {
 		height: 50%;
+	}
+    .hexagon-wrapper:nth-child(4) {
+		margin-top: -112px;
 	}
 }
 
