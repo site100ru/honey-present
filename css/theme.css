@@ -1907,6 +1907,11 @@ footer {
 	margin-bottom: var(--section-padding);
 }
 
+.gifts-description .single-product-img
+.order-description .single-product-img{
+    height: auto;
+}
+
 .nav-li-float-righ {
 	opacity: 100%;
 	transition: 0.25s;
@@ -2003,6 +2008,8 @@ footer {
 .gallery-2691 .single-product-img img {
 	border-radius: 10px;
 }
+
+
 
 .section .img-wrapper img {
 	display: block;
