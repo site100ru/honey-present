@@ -594,6 +594,7 @@ a:hover {
 
 a.navbar-brand {
 	margin-right: 0;
+    width: max-content;
 }
 
 @media (max-width: 575.98px) {
